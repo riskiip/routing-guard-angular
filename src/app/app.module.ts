@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -9,6 +10,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { MaterialModule } from "./module/material/material.module";
 import { AuthGuard } from "./guards/auth.guard";
+import { AccessGuard } from "./guards/access.guard";
 
 @NgModule({
   declarations: [
@@ -22,8 +24,9 @@ import { AuthGuard } from "./guards/auth.guard";
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ReactiveFormsModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, AccessGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
