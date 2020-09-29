@@ -11,6 +11,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { MaterialModule } from "./module/material/material.module";
 import { AuthGuard } from "./guards/auth.guard";
 import { AccessGuard } from "./guards/access.guard";
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AccessGuard } from "./guards/access.guard";
     RegisterComponent,
     LoginComponent,
     HomeComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
