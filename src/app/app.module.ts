@@ -12,6 +12,8 @@ import { MaterialModule } from "./module/material/material.module";
 import { AuthGuard } from "./guards/auth.guard";
 import { AccessGuard } from "./guards/access.guard";
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     LoginComponent,
     HomeComponent,
     PagenotfoundComponent,
+    DetailComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

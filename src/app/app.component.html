@@ -5,6 +5,25 @@
   <button mat-button routerLink="">Home</button>
   <button mat-button routerLink="/register">Register</button>
   <button mat-button routerLink="/login">Sign in</button>
+  <button mat-button routerLink="/about">About</button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
+
+<!-- ilmu baru yang bisa di dapat dari routing guard:
+jika component yang dibuat berupa child dari
+component tertentu, maka Component tersebut tidak
+dapar diatur routerLink nya jika terdapat 
+slash ('/') -->
+
+<!-- Contoh:
+Component Detail adalah child dari component About.
+Untuk About, dapat diatur routerLink 'about' atau
+'/about'. Sedangkan untuk component Detail, hanya
+dapat diatur routerLink 'detail' -->
+
+<!-- Dengan mengatur sebuah component menjadi child, 
+kita dapat mengatur nya di app.routing-module.ts
+Alangkah lebih baik jika menambahkan guard
+canActivateChild, namun jika tidak mau, juga 
+gak papa -->
